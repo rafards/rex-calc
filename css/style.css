@@ -56,7 +56,6 @@ body {
 }
 /* Styling Container */
 .rex-container {
-	position: relative;
 	padding: 30px;
 	display: flex;
 	justify-content: center;
