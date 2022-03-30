@@ -147,10 +147,9 @@ body {
 
 /* Copyright Styling */
 .rex-copy {
-	position: absolute;
-	bottom: 20px;
 	font-family: 'Qahiri';
 	padding: 5px 15px;
+	margin-top: 45px;
 	border-radius: 6px;
 	text-align: center;
 	box-shadow: 13px 13px 20px #79767033, -13px -13px 20px #fffaf0;
@@ -176,7 +175,7 @@ body {
 	.rex-copy {
 		padding: 3px 12px;
 		border-radius: 6px;
-		margin-top: 30px;
+		margin-top: 45px;
 		box-shadow: 13px 13px 20px #79767033, -13px -13px 20px #fffaf0;
 	}
 	.rex-copy p {
