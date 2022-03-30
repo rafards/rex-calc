@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RexCalc</title>
+
+		<!-- Stylesheet Link -->
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- JavaScript Link -->
+		<script src="js/script.js" defer></script>
+
+		<!-- Scroll Reveal Link -->
+		<script src="https://unpkg.com/scrollreveal"></script>
+
+		<!-- Autotyping -->
+		<script src="js/AutoTyping.js"></script>
+	</head>
+	<body>
+		<div class="rex-container">
+			<div class="rex-type">
+				<p id="rexType"></p>
+			</div>
+			<div class="rex-calc-cont">
+				<div class="rex-title">
+					<p>RexCalc</p>
+				</div>
+				<div class="rex-output">
+					<input
+						id="rexResult"
+						type="text"
+						placeholder="0"
+						readonly
+					/>
+				</div>
+
+				<div class="rex-btns-cont">
+					<div class="rex-btns">
+						<button id="ac" onclick="ac()">AC</button>
+						<button class="btn">^</button>
+						<button class="btn">(</button>
+						<button class="btn">)</button>
+						<button class="btn">%</button>
+						<button id="ce" onclick="backspc()">DEL</button>
+					</div>
+
+					<div class="rex-btns">
+						<button onclick="sin()">sin</button>
+						<button onclick="pi()">π</button>
+						<button class="btn">7</button>
+						<button class="btn">8</button>
+						<button class="btn">9</button>
+						<button class="btn">÷</button>
+					</div>
+
+					<div class="rex-btns">
+						<button onclick="cos()">cos</button>
+						<button onclick="log()">log</button>
+						<button class="btn">4</button>
+						<button class="btn">5</button>
+						<button class="btn">6</button>
+						<button class="btn">×</button>
+					</div>
+
+					<div class="rex-btns">
+						<button onclick="tan()">tan</button>
+						<button onclick="sqrt()">√</button>
+						<button class="btn">1</button>
+						<button class="btn">2</button>
+						<button class="btn">3</button>
+						<button class="btn">-</button>
+					</div>
+
+					<div class="rex-btns">
+						<button onclick="e()">e</button>
+						<button onclick="cbrt()"><sup>3</sup>√</button>
+						<button class="btn">0</button>
+						<button class="btn">.</button>
+						<button id="eval" onclick="equal()">=</button>
+						<button class="btn">+</button>
+					</div>
+				</div>
+			</div>
+			<div class="rex-copy">
+				<p>&copy;2022 Rafly Ardiwansyah</p>
+			</div>
+		</div>
+	</body>
+</html>
