@@ -1,0 +1,300 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+
+/* CSS Variable */
+:root {
+	--rex-plus: 5px 5px 8px;
+	--rex-min: -5px -5px 8px;
+	--rex-p-nam: 3px 3px 6px;
+	--rex-m-nam: -3px -3px 6px;
+	--rex-p-pat: 2px 2px 5px;
+	--rex-m-pat: -2px -2px 5px;
+}
+
+/* CSS Style Setup */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	user-select: none;
+	background: #f0ece3;
+	font-family: 'Ubuntu Mono', monospace;
+	color: #596e79;
+}
+
+/* Title Styling */
+.rex-title {
+	font-family: 'Qahiri';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.rex-title p {
+	font-size: 19px;
+	border-radius: 5px;
+	padding: 3px 15px;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+	box-shadow: inset 4px 4px 4px #cac7bea8, inset -4px -4px 4px #fffaf0b6;
+}
+
+/* Autotype Animation */
+.rex-type {
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 45px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	box-shadow: 2px 2px 13px #79767033, -2px -2px 13px #fffaf0;
+}
+.rex-type p {
+	font-size: 15px;
+}
+/* Styling Container */
+.rex-container {
+	position: relative;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.rex-calc-cont {
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: 13px 13px 20px #79767033, -13px -13px 20px #fffaf0;
+}
+.rex-output {
+	display: flex;
+	justify-content: center;
+}
+
+/* Button Styling */
+.rex-btns {
+	display: flex;
+	justify-content: center;
+}
+.rex-btns button {
+	text-transform: uppercase;
+	background: #f0ece3;
+	color: #596e79;
+	font-weight: bold;
+	width: 16%;
+	height: 30px;
+	font-size: 14px;
+	border: none;
+	outline: none;
+	margin: 8px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.1s;
+	box-shadow: var(--rex-plus) #79767033, var(--rex-min) #fffaf0;
+}
+.rex-btns button:hover {
+	box-shadow: inset var(--rex-plus) #1818170d, inset var(--rex-min) #fffbf1a6;
+	background: none;
+}
+.rex-btns button sup {
+	font-size: 11px;
+}
+
+/* Output Styling */
+.rex-output #rexResult {
+	color: #596e79;
+	margin: 0 10px 10px;
+	width: 100%;
+	height: 60px;
+	font-size: 30px;
+	outline: none;
+	border: none;
+	text-align: right;
+	padding: 0 0.5em;
+	background: #dfd3ce80;
+	border-radius: 6px;
+	box-shadow: inset 8px 8px 8px #cac7be, inset -8px -8px 8px #fffaf0b3;
+}
+
+/* Specific Button Style */
+#eval {
+	background: #596e79;
+	color: #fff;
+	box-shadow: inset var(--rex-plus) #879399, inset var(--rex-min) #444c5066;
+}
+#eval:hover {
+	box-shadow: inset var(--rex-plus) #525c61b3, inset var(--rex-min) #8b979c;
+}
+#ac {
+	background: #c53636;
+	color: #fff;
+	box-shadow: var(--rex-plus) #413c3333, var(--rex-min) #fff7e6;
+}
+#ac:hover {
+	box-shadow: inset var(--rex-plus) #973636b3, inset var(--rex-min) #dd4c4c;
+}
+#ce {
+	background: #33c273;
+	color: #fff;
+	box-shadow: var(--rex-plus) #413c3333, var(--rex-min) #fff7e6;
+}
+#ce:hover {
+	box-shadow: inset var(--rex-plus) #33a163, inset var(--rex-min) #41df88;
+}
+
+/* Copyright Styling */
+.rex-copy {
+	position: absolute;
+	bottom: 20px;
+	font-family: 'Qahiri';
+	padding: 5px 15px;
+	border-radius: 6px;
+	text-align: center;
+	box-shadow: 13px 13px 20px #79767033, -13px -13px 20px #fffaf0;
+}
+.rex-copy p {
+	font-size: 16px;
+	letter-spacing: 4px;
+}
+
+/* Responsive Section */
+@media screen and (max-width: 600px) {
+	.rex-calc-cont {
+		padding: 10px;
+	}
+	.rex-type {
+		display: none;
+	}
+	.rex-title p {
+		font-size: 17px;
+		padding: 2px 12px;
+		margin-bottom: 10px;
+	}
+	.rex-copy {
+		padding: 3px 12px;
+		border-radius: 6px;
+		margin-top: 30px;
+		box-shadow: 13px 13px 20px #79767033, -13px -13px 20px #fffaf0;
+	}
+	.rex-copy p {
+		font-size: 14px;
+	}
+	.rex-calc-cont button {
+		width: 18%;
+		height: 28px;
+		font-size: 11px;
+		margin: 6px;
+	}
+	.rex-btns {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.rex-btns button {
+		box-shadow: var(rex-p-nam) #79767033, var(rex-m-nam) #fffaf0;
+	}
+	.rex-btns button:hover {
+		box-shadow: inset var(rex-p-nam) #1818170d,
+			inset var(rex-m-nam) #fffbf1a6;
+	}
+	.rex-btns button sup {
+		font-size: 8px;
+	}
+	.rex-output #rexResult {
+		width: 100%;
+		height: 50px;
+		font-size: 23px;
+		padding: 0 1rem;
+		margin-bottom: 8px;
+		box-shadow: inset 6px 6px 6px #cac7be, inset -6px -6px 6px #fffaf0b3;
+	}
+	#eval {
+		box-shadow: inset var(--rex-p-nam) #879399,
+			inset var(--rex-m-nam) #444c5066;
+	}
+	#eval:hover {
+		box-shadow: inset var(--rex-p-nam) #525c61b3,
+			inset var(--rex-m-nam) #8b979c;
+	}
+	#ac {
+		box-shadow: var(--rex-p-nam) #413c3333, var(--rex-m-nam) #fff7e6;
+	}
+	#ac:hover {
+		box-shadow: inset var(--rex-p-nam) #973636b3,
+			inset var(--rex-m-nam) #dd4c4c;
+	}
+	#ce {
+		box-shadow: var(--rex-p-nam) #413c3333, var(--rex-m-nam) #fff7e6;
+	}
+	#ce:hover {
+		box-shadow: inset var(--rex-p-nam) #33a163,
+			inset var(--rex-m-nam) #41df88;
+	}
+}
+@media screen and (max-width: 425px) {
+	.rex-container {
+		padding: 0 30px;
+	}
+	.rex-calc-cont {
+		padding: 10px;
+		width: 100%;
+	}
+	.rex-title p {
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	.rex-copy {
+		width: 70%;
+		box-shadow: 7px 7px 10px #79767033, -7px -7px 10px #fffaf0;
+	}
+	.rex-copy p {
+		font-size: 12px;
+	}
+	.rex-calc-cont button {
+		height: 24px;
+		font-size: 10px;
+		margin: 6px;
+	}
+	.rex-btns button {
+		box-shadow: var(--rex-p-pat) #79767033, var(--rex-m-pat) #fffaf0;
+	}
+	.rex-btns button:hover {
+		box-shadow: inset var(--rex-p-pat) #1818170d,
+			inset var(--rex-m-pat) #fffbf1a6;
+	}
+	.rex-btns button sup {
+		font-size: 6px;
+	}
+	.rex-output #rexResult {
+		width: 100%;
+		height: 38px;
+		font-size: 19px;
+		padding: 0 0.8rem;
+		box-shadow: inset 4px 4px 4px #cac7be, inset -4px -4px 4px #fffaf0b3;
+	}
+	#eval {
+		box-shadow: inset var(--rex-p-pat) #879399,
+			inset var(--rex-m-pat) #444c5066;
+	}
+	#eval:hover {
+		box-shadow: inset var(--rex-p-pat) #525c61b3,
+			inset var(--rex-m-pat) #8b979c;
+	}
+	#ac {
+		box-shadow: var(--rex-p-pat) #413c3333, var(--rex-m-pat) #fff7e6;
+	}
+	#ac:hover {
+		box-shadow: inset var(--rex-p-pat) #973636b3,
+			inset var(--rex-m-pat) #dd4c4c;
+	}
+	#ce {
+		box-shadow: var(--rex-p-pat) #413c3333, var(--rex-m-pat) #fff7e6;
+	}
+	#ce:hover {
+		box-shadow: inset var(--rex-p-pat) #33a163,
+			inset var(--rex-m-pat) #41df88;
+	}
+}
